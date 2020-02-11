@@ -1,4 +1,6 @@
 import React from 'react';
+import TodoList from './components/TodoComponents/TodoList';
+import TodoForm from './components/TodoComponents/TodoForm'
 
 const taskItem = [
   {
@@ -20,15 +22,22 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      todoItem : taskItem
+      todoItemList : taskItem
     }
   }
   // design `App` to be the parent component of your application.
   // this component is going to take care of state, and any change handlers you need to work with your state
+  
+  // toggleItem = clickedId =>{
+  //   const newTaskList = this.state.ta
+  // }
+
   render() {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
+        <TodoList taskItem={taskItem} />
+        {/* <TodoForm /> */}
       </div>
     );
   }
