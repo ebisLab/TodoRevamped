@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
+import './styles.css';
 // import TodoForm from './components/TodoComponents/TodoForm'
 
 const taskItem = [
@@ -40,6 +41,7 @@ class App extends React.Component {
           completed: !item.completed //if true change to false, or vice versa
         };
       } else {
+        console.log('item is untouched')
         return item; //gets returned untouched
       }
     })
