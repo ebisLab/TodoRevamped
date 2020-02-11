@@ -50,6 +50,15 @@ todoItemList: newTaskList
     })
   }
 
+  //Passed down form, it is here because thats where the main state resides. 
+  addNewItem = itemText =>{
+const newTaskItem = {
+  name: itemText, //if I don't have data pass in parameter
+  id: Date.now(),
+  purchased: false
+}
+  }
+
   render() {
     return (
       <div>

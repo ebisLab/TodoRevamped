@@ -8,6 +8,7 @@ export default class TodoForm extends Component {
         }
     }
 
+    //4
     handleChange = e =>{
         //5. update state
         this.setState({
@@ -18,14 +19,21 @@ export default class TodoForm extends Component {
 
     }
 
+    handleSubmit = e =>{
+        console.log('Clicked on Add button')
+        e.preventDefault();
+    }
+
     render(){
         return(
-            <form>
-                <input type="text" name="newTask" 
+            <form onSubmit={this.handleSubmit}> {/*6 */}
+                <input type="text" //5
+                name="newTask" 
                 value={this.state.newTask} 
                 placeholder="Add your task here" 
                 onChange={this.handleChange}/>
-                <button>Add</button>
+                <button type= 'submit'>Add</button>
+                <button type= 'button'>Remove checked off item</button>
             </form>
         )
     }
