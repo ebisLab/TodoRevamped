@@ -53,7 +53,7 @@ todoItemList: newTaskList
   // 1. Passed down form, it is here because thats where the main state resides. 
   addNewItem = itemText =>{
 const newTaskItem = { //2.
-  name: itemText, //3. if I don't have data pass in parameter
+  task: itemText, //3. if I don't have data pass in parameter
   id: Date.now(),
   purchased: false
 }

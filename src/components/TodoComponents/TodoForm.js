@@ -5,7 +5,7 @@ export default class TodoForm extends Component {
         super(); //2.
         this.state ={ //3
             newTask: '' //banana word but must match name value in input
-        }
+        };
     }
 
     //4
@@ -15,8 +15,9 @@ export default class TodoForm extends Component {
         //6. pass in object
         // [e.target.name]: e.target.value //<---option 1 -- for multiple inputs this is how you controlled all of them
         newTask: e.target.value // <--option 2. since there's one input
-        })
 
+    })
+console.log(e.target.value)
     }
 
     handleSubmit = e =>{
@@ -34,7 +35,7 @@ export default class TodoForm extends Component {
                 placeholder="Add your task here" 
                 onChange={this.handleChange}/>
                 <button type= 'submit'>Add</button>
-                <button type= 'button'>Remove checked off item</button>
+                {/* <button type= 'button'>Remove checked off item</button> */}
             </form>
         )
     }
