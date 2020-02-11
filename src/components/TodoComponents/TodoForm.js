@@ -23,7 +23,8 @@ console.log(e.target.value)
     handleSubmit = e =>{
         console.log('Clicked on Add button');
         e.preventDefault();
-        this.props.addNewItem(this.state.newTask)
+        this.props.addNewItem(this.state.newTask);
+        this.setState({newTask: ''}) //clears out form input onSubmit
     }
 
     render(){
