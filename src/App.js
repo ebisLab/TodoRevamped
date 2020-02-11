@@ -1,7 +1,7 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import './styles.css';
-// import TodoForm from './components/TodoComponents/TodoForm'
+import TodoForm from './components/TodoComponents/TodoForm'
 
 const taskItem = [
   {
@@ -54,8 +54,8 @@ todoItemList: newTaskList
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
+        <TodoForm />
         <TodoList taskItem ={this.state.todoItemList} toggleItem={this.toggleItem} />
-        {/* <TodoForm /> */}
       </div>
     );
   }
