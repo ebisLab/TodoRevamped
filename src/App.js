@@ -69,7 +69,7 @@ this.setState({
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <TodoForm />
+        <TodoForm addNewItem={this.addNewItem}/>
         <TodoList taskItem ={this.state.todoItemList} toggleItem={this.toggleItem} />
       </div>
     );
