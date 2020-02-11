@@ -50,13 +50,19 @@ todoItemList: newTaskList
     })
   }
 
-  //Passed down form, it is here because thats where the main state resides. 
+  // 1. Passed down form, it is here because thats where the main state resides. 
   addNewItem = itemText =>{
-const newTaskItem = {
-  name: itemText, //if I don't have data pass in parameter
+const newTaskItem = { //2.
+  name: itemText, //3. if I don't have data pass in parameter
   id: Date.now(),
   purchased: false
 }
+
+//4. Set state call
+this.setState({
+  //update grociery list
+  todoItemList: [...this.state.todoItemList, newTaskItem]
+})
   }
 
   render() {
