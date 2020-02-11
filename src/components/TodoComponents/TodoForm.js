@@ -20,8 +20,9 @@ export default class TodoForm extends Component {
     }
 
     handleSubmit = e =>{
-        console.log('Clicked on Add button')
+        console.log('Clicked on Add button');
         e.preventDefault();
+        this.props.addNewItem(this.state.newTask)
     }
 
     render(){
