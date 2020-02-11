@@ -36,7 +36,7 @@ console.log(e.target.value)
                 placeholder="Add your task here" 
                 onChange={this.handleChange}/>
                 <button type= 'submit'>Add</button>
-                {/* <button type= 'button'>Remove checked off item</button> */}
+                <button type= 'button' onClick={this.props.removeList}>Remove checked off item</button>
             </form>
         )
     }

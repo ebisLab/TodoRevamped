@@ -65,11 +65,22 @@ this.setState({
 })
   }
 
+  //remove checked off items
+  removeList = itemTask =>{
+    console.log('Item(s) should be removed now')
+    this.setState({
+  todoItemList: this.state.todoItemList.filter(item =>{
+    return !item.completed
+  })
+      
+    })
+  }
+
   render() {
     return (
       <div>
         <h2>Welcome to your Todo App!</h2>
-        <TodoForm addNewItem={this.addNewItem}/>
+        <TodoForm addNewItem={this.addNewItem} removeList={this.removeList}/>
         <TodoList taskItem ={this.state.todoItemList} toggleItem={this.toggleItem} />
       </div>
     );
