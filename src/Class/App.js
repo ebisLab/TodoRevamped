@@ -25,7 +25,8 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      todoItemList : taskItem
+      todoItemList : taskItem,
+      dataText: ''
     }
   }
   // design `App` to be the parent component of your application.
