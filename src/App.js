@@ -3,8 +3,8 @@ import {BrowserRouter as Router, Route, Switch,Link, NavLink} from 'react-router
 
 import ClassApp from './Class/App';
 import HooksApp from './FunctionHooks/HooksApp'
-import Header from './Header'
-import MainPath from './MainPath'
+import Header from './MainComponents/Header'
+import MainPath from './MainComponents/MainPath'
 
 
 const App = () =>{
