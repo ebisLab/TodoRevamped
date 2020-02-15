@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch,Link, NavLink, Redirect} from 'react-router-dom';
 import TodoList from '../Class/components/TodoComponents/TodoList';
-import '../Class/styles.css';
+import './styles.css';
 import TodoForm from '../Class/components/TodoComponents/TodoForm';
 import HooksApp from '../FunctionHooks/HooksApp'
 
