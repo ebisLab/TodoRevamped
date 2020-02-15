@@ -1,8 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch,Link, NavLink} from 'react-router-dom';
-
-import ClassApp from '../Class/App';
-import HooksApp from '../FunctionHooks/HooksApp'
+import {BrowserRouter as Router, Link, NavLink} from 'react-router-dom';
 
 const Header = () =>{
 
