@@ -8,6 +8,7 @@ const Header = () =>{
         <Link to="/" style={{padding: '20px'}}>Main</Link>
         <Link to="/class" style={{padding: '20px'}}>Class</Link>
         <Link to="/hooks" style={{padding: '20px'}}>Function/Hooks</Link>
+        <Link to="/reducer" style={{padding: '20px'}}>Reducer</Link>
         </header>
     
         )
